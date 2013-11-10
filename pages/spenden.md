@@ -2,16 +2,29 @@
 title: Spenden
 ---
 
-<h1>Spenden</h1>
-<p>Die Nutzung von Weimarnetz ist kostenlos und keiner der Betreiber von Netzknoten verlangt Geld oder andere Zuwendungen. Jeder Mensch soll das Netz ohne Anmeldung, eigene Router und schlechtes Gewissen nutzen können. Falls das Gewissen trotzdem hineinredet, stellt einen eigenen Router auf und unterstützt uns durch Spenden.
-<p>Eure Spenden werden z.B. dafür eingesetzt:</p>
-<ul>
-  <li>Zur Deckung laufenden Kosten, unter anderem für den VPN-Server, um die Störerhaftung von den DSL-Einspeisern zu nehmen.</li>
-  <li>An wichtigen Punkten unterstützen wir den Aufbau von Routern, auch aufwändigere Installationen zur Stabilisierung des Netzes möchten wir fördern.</li>
-  <li>Wir stellen Informationsmaterial her, um unsere Idee besser erklären und mehr Leute zum Mitmachen bewegen zu können.</li>
-  <li>Nicht nur in Weimar gibt es ein Freifunk-Projekt. Die Projekte vernetzen sich untereinander und wir helfen gemeinsame Treffen oder den Besuch von Konferenzen zu finanzieren.</li>
-</ul>
-<p>Hier sind nun drei Wege, uns finanziell zu unterstützen:</p>
+# Spenden
+
+Die Nutzung von Weimarnetz ist kostenlos und keiner der Betreiber von
+Netzknoten verlangt Geld oder andere Zuwendungen. Jeder Mensch soll das
+Netz ohne Anmeldung, eigene Router und schlechtes Gewissen nutzen
+können. Falls das Gewissen trotzdem hineinredet, stellt einen eigenen
+Router auf und unterstützt uns durch Spenden.
+
+Eure Spenden werden z.B. dafür eingesetzt:
+
+-   Zur Deckung laufenden Kosten, unter anderem für den VPN-Server, um
+    die Störerhaftung von den DSL-Einspeisern zu nehmen.
+-   An wichtigen Punkten unterstützen wir den Aufbau von Routern, auch
+    aufwändigere Installationen zur Stabilisierung des Netzes möchten
+    wir fördern.
+-   Wir stellen Informationsmaterial her, um unsere Idee besser erklären
+    und mehr Leute zum Mitmachen bewegen zu können.
+-   Nicht nur in Weimar gibt es ein Freifunk-Projekt. Die Projekte
+    vernetzen sich untereinander und wir helfen gemeinsame Treffen oder
+    den Besuch von Konferenzen zu finanzieren.
+
+Hier sind nun die drei Wege, uns finanziell zu unterstützen:
+
 <div class="row">
   <div class="col-sm-12 col-lg-4">
     <h2>Betterplace.org</h2>
@@ -42,4 +55,5 @@ title: Spenden
 </ul>
   </div>
 </div> <!-- ende row -->
-<p>Weimarnetz e.V. ist ein gemeinnütziger Verein und berechtigt, Spendenbescheinigungen auszustellen. Die Spendenbescheinigungen stellen wir im 1. Quartal des Folgejahres für Spenden über 100 Euro aus, für die Erstellung benötigen wir die komplette Anschrift des Spenders. Bei Spenden über betterplace.org wird uns diese Arbeit abgenommen.</p>
+
+Weimarnetz e.V. ist ein **gemeinnütziger Verein** und berechtigt, Spendenbescheinigungen auszustellen. Die Spendenbescheinigungen stellen wir im 1. Quartal des Folgejahres für Spenden über 100 Euro aus, für die Erstellung benötigen wir die komplette Anschrift des Spenders. (Bei Spenden über betterplace.org wird uns diese Arbeit abgenommen.)

@@ -23,3 +23,5 @@ checkout assets (for dev and on deploy):
 ## TODO
 
 - /status: check ajax reloader…
+- `.row`s und `.col-*`s mit partials machen
+- include /statusTable in /status

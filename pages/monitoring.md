@@ -5,4 +5,6 @@ iframe:
   url: "http://intercity-vpn.de/networks/ffweimar/"
 ---
 
-<h1>Monitoring</h1>
+# Monitoring
+
+<!-- iframe from config above -->
