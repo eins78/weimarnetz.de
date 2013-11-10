@@ -11,7 +11,9 @@
     
     <div class="container">
 
-      {{> body }}
+      {{#markdown}}
+        {{> body }}
+      {{/markdown}}
     
       {{#if iframe.url }}
         {{> iframe.html }}
