@@ -1,129 +1,111 @@
-<!-- based on <http://getbootstrap.com/examples/jumbotron> -->
+---
+body:
+  id: home
+---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Weimarnetz e.V.</title>
-    <?php include("./inc/_head.inc.php") ?>  
-  </head>
+</div>
 
-  <body id="home">
+<!-- grosses startseitenbanner -->
+<div id="banner" class="jumbotron jumbotron-special ff-logo-bg">
+  <div class="container">
+    <h1>Willkommen im Weimarnetz</h1>
+    <p class="lead">Freifunk in Weimar &mdash; Das freie B&uuml;rger-WLAN!</p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="/mitmachen">Jetzt Mitfunken &raquo;</a>
+      <a class="btn btn-warning btn-lg" href="/contact">Hilfe bekommen &raquo;</a>
+    </p>
+    
+  </div>
+</div>
 
-    <?php include("./inc/navbar.inc.php") ?>
+<!-- hier beginnt die eigentliche seite -->
+<div class="container">
 
-    <?php include("./inc/activation.inc.php") ?>
+  <!-- main reihe blöcke - content/ad -->
+  <div class="row">
 
-    <!-- grosses startseitenbanner -->
-    <div id="banner" class="jumbotron jumbotron-special ff-logo-bg">
-      <div class="container">
-        <h1>Willkommen im Weimarnetz</h1>
-        <p class="lead">Freifunk in Weimar &mdash; Das freie B&uuml;rger-WLAN!</p>
-        <p>
-          <a class="btn btn-primary btn-lg" href="/mitmachen">Jetzt Mitfunken &raquo;</a>
-          <a class="btn btn-warning btn-lg" href="/contact">Hilfe bekommen &raquo;</a>
-        </p>
-        
-      </div>
-    </div>
+    <div class="col-sm-10">
 
-    <!-- hier beginnt die eigentliche seite -->
-    <div class="container">
-
-      <!-- main reihe blöcke - content/ad -->
+      <!-- eine reihe content blöcke -->
       <div class="row">
-    
-        <div class="col-sm-10">
-    
-          <!-- eine reihe content blöcke -->
-          <div class="row">
-    
-            <!-- ein halber block (12/6=1/2) -->
-            <div class="col-sm-6">
-              <h2 class="page-header">Was ist Weimarnetz?</h2>
-	      Weimarnetz baut ein freies, unabhängiges und dezentral organisiertes Datennetz in der Stadt Weimar auf. Das Netz basiert auf Funkverbindungen, die mit handelsüblichen WLAN-Geräten aufgebaut werden. Weimarnetz ist die lokale Umsetzung der über die Ländergrenzen hinweg bekannten <a href="http://www.freifunk.net" target="_blank">Freifunk-Initiative</a>.</br></br>
-	      Werde auch Du Teil des Netzes und <a href="/mitmachen">mach mit!</a> 
-            </div>
-            <!-- ein halber block (12/6=1/2) -->
-            <div class="col-sm-6">
-              <!--<h2 class="page-header">Aktuelle Meldungen</h2>
-              <!- dyn: news-liste -->
-	      <?php //include("./inc/currentnews.inc.php") ?>
-      	      <!--<p><a class="btn btn-xs btn-default" href="http://wireless.subsignal.org/index.php?title=Vorlage:Startseite.Aktuelles&action=edit" target="_blank">Text bearbeiten &raquo;</a></p>
-	      -->
-	      <h2 class="page-header">Worum geht es?</h2>
-	      <a href="/about"><img class="img-responsive" src="/img/video/ffvideo.png"/></a>
-            </div>
-    
-   
-          </div> <!-- ende reihe -->
 
-          <!-- zweite reihe blöcke -->
-          <div class="row">
-
-            <!-- ein halber block (12/6=1/2) -->
-            <div class="col-sm-6">
-              <h2 class="page-header">Neues aus dem Weimarnetz</h2>
-              <p>
-                <!-- dyn: discuss-liste -->
-	        <?php include("./inc/allnews.inc.php") ?>
-        
-              </p>
-            </div>
-
-            <div class="col-sm-6">
-              <h2 class="page-header">Spendenaufruf</h2>
-              <!-- dyn: spenden-liste -->
-	      <p>
-		Die Nutzung von Weimarnetz ist kostenlos und keiner der Betreiber von Netzknoten verlangt Geld oder andere Zuwendungen. Jeder Mensch soll das Netz ohne Anmeldung, eigene Router und schlechtes Gewissen nutzen können. Falls das Gewissen trotzdem hineinredet, stellt einen eigenen Router auf und unterstützt uns durch Spenden.
-	      </p>
-	      <p>
-		Eure Spenden werden eingesetzt, um laufende Kosten zu decken, z.B. für den VPN-Server, um die Störerhaftung von den DSL-Einspeisern zu nehmen.
-	      </p>
-	      <p>
-		Welche Möglichkeiten es gibt, uns finanziell zu unterstützen und wofür wir die Spenden einsetzen erfahrt ihr auf <a href="/spenden">dieser Seite</a>.
-	      </p>
-            </div>
-    
-          </div> <!-- ende reihe -->
-
-        </div> <!-- ende content -->
-    
-        <div class="col-sm-2" style="text-align:right">
-          <h2 class="page-header"><small class="text-muted">Verein</small></h2>
-          <!-- mindfactory banner 
-          <img src="img/Banner/120x500_mindfactory_hardware.jpg" width="120" height="500" alt="Ihre Hardware stößt an ihre Grenzen? Zeit für ein Upgrade! www.mindfactory.de" usemap="#admap" />
-          <map name="admap">
-            <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-            <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-            <!-- #$-:Please do not edit lines starting with "#$" -->
-            <!-- #$VERSION:2.3 -->
-            <!-- #$AUTHOR:Unknown -->
-            <!--<area shape="rect" coords="3,413,116,438" target="_blank" href="http://www.mindfactory.de" />
-          </map>-->
-	  <p>
-	  <address><strong>Weimarnetz e.V.</strong><br>
-            Marienstr. 18<br>
-            99423 Weimar</address>
-          <address><strong>Weimarnetz Sorgentelefon</strong><br>
-              +49 3643 544304</address>
-	  <address><strong>Email</strong><br>
-	    <a href="mailto:wireless@subsignal.org?subject=Kontakt über weimarnetz.de">wireless@subsignal.org</a>
-	  </address>
-	  <strong>Spenden</strong>
-	  </p>
-	  <p>
-	  <iframe frameborder='0' marginheight='0' marginwidth='0' src='http://www.betterplace.org/de/projects/14895-weimarnetz-e-v-freies-wlan-in-weimar/widget' width='160' height='260' style='border: 0; padding:0; margin:0;'>Ihr Browser unterstützt keine Iframes. <a href='http://www.betterplace.org/projects'>Online Spenden</a> auf betterplace.org</iframe>
-	  </p>
+        <!-- ein halber block (12/6=1/2) -->
+        <div class="col-sm-6">
+          <h2 class="page-header">Was ist Weimarnetz?</h2>
+    Weimarnetz baut ein freies, unabhängiges und dezentral organisiertes Datennetz in der Stadt Weimar auf. Das Netz basiert auf Funkverbindungen, die mit handelsüblichen WLAN-Geräten aufgebaut werden. Weimarnetz ist die lokale Umsetzung der über die Ländergrenzen hinweg bekannten <a href="http://www.freifunk.net" target="_blank">Freifunk-Initiative</a>.</br></br>
+    Werde auch Du Teil des Netzes und <a href="/mitmachen">mach mit!</a> 
         </div>
-      
-      </div> <!-- ende main -->
+        <!-- ein halber block (12/6=1/2) -->
+        <div class="col-sm-6">
+          <!--<h2 class="page-header">Aktuelle Meldungen</h2>
+          <!- dyn: news-liste -->
+    <?php //include("../inc/currentnews.inc.php") ?>
+  	      <!--<p><a class="btn btn-xs btn-default" href="http://wireless.subsignal.org/index.php?title=Vorlage:Startseite.Aktuelles&action=edit" target="_blank">Text bearbeiten &raquo;</a></p>
+    -->
+    <h2 class="page-header">Worum geht es?</h2>
+    <a href="/about"><img class="img-responsive" src="/{{assets}}/img/video/ffvideo.png"/></a>
+        </div>
 
-      <?php include("./inc/footer.inc.php") ?>
+
+      </div> <!-- ende reihe -->
+
+      <!-- zweite reihe blöcke -->
+      <div class="row">
+
+        <!-- ein halber block (12/6=1/2) -->
+        <div class="col-sm-6">
+          <h2 class="page-header">Neues aus dem Weimarnetz</h2>
+          <p>
+            <!-- dyn: discuss-liste -->
+      <?php include("../inc/allnews.inc.php") ?>
+    
+          </p>
+        </div>
+
+        <div class="col-sm-6">
+          <h2 class="page-header">Spendenaufruf</h2>
+          <!-- dyn: spenden-liste -->
+    <p>
+Die Nutzung von Weimarnetz ist kostenlos und keiner der Betreiber von Netzknoten verlangt Geld oder andere Zuwendungen. Jeder Mensch soll das Netz ohne Anmeldung, eigene Router und schlechtes Gewissen nutzen können. Falls das Gewissen trotzdem hineinredet, stellt einen eigenen Router auf und unterstützt uns durch Spenden.
+    </p>
+    <p>
+Eure Spenden werden eingesetzt, um laufende Kosten zu decken, z.B. für den VPN-Server, um die Störerhaftung von den DSL-Einspeisern zu nehmen.
+    </p>
+    <p>
+Welche Möglichkeiten es gibt, uns finanziell zu unterstützen und wofür wir die Spenden einsetzen erfahrt ihr auf <a href="/spenden">dieser Seite</a>.
+    </p>
+        </div>
+
+      </div> <!-- ende reihe -->
+
+    </div> <!-- ende content -->
+
+    <div class="col-sm-2" style="text-align:right">
+      <h2 class="page-header"><small class="text-muted">Verein</small></h2>
+      <!-- mindfactory banner 
+      <img src="img/Banner/120x500_mindfactory_hardware.jpg" width="120" height="500" alt="Ihre Hardware stößt an ihre Grenzen? Zeit für ein Upgrade! www.mindfactory.de" usemap="#admap" />
+      <map name="admap">
+        <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+        <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+        <!-- #$-:Please do not edit lines starting with "#$" -->
+        <!-- #$VERSION:2.3 -->
+        <!-- #$AUTHOR:Unknown -->
+        <!--<area shape="rect" coords="3,413,116,438" target="_blank" href="http://www.mindfactory.de" />
+      </map>-->
+<p>
+<address><strong>Weimarnetz e.V.</strong><br>
+        Marienstr. 18<br>
+        99423 Weimar</address>
+      <address><strong>Weimarnetz Sorgentelefon</strong><br>
+          +49 3643 544304</address>
+<address><strong>Email</strong><br>
+  <a href="mailto:wireless@subsignal.org?subject=Kontakt über weimarnetz.de">wireless@subsignal.org</a>
+</address>
+<strong>Spenden</strong>
+</p>
+<p>
+<iframe frameborder='0' marginheight='0' marginwidth='0' src='http://www.betterplace.org/de/projects/14895-weimarnetz-e-v-freies-wlan-in-weimar/widget' width='160' height='260' style='border: 0; padding:0; margin:0;'>Ihr Browser unterstützt keine Iframes. <a href='http://www.betterplace.org/projects'>Online Spenden</a> auf betterplace.org</iframe>
+</p>
+    </div>
   
-    </div> <!-- ende inhalt /container -->
-
-
-    <?php include("./inc/_foot.inc.php") ?>
-
-  </body>
-</html>
+  </div> <!-- ende main -->

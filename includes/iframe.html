@@ -1,0 +1,12 @@
+<div class="row">
+<div class="span6">{{description}}</div>
+<div class="span1 offset5"><a class="btn" href="{{iframe.url}}" target="_blank">Neues&nbsp;Tab</a></div>
+</div>
+{{#notice}}
+  <div class="row">	 	
+  <div class="span6"><span class="label label-warning">{{label}}</span> {{text}}</div>
+</div>
+{{/notice}}
+<div>&nbsp;</div>
+<div style="text-align: center"><iframe id="ifrm" src="{{iframe.url}}" width="98%" scrolling="yes" marginwidth="0"
+marginheight="0" frameborder="0">IFRAME</iframe></div>

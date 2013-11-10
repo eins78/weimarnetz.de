@@ -20,4 +20,6 @@ checkout assets (for dev and on deploy):
 - all other includes are just content
 
 
+## TODO
 
+- /status: check ajax reloader…

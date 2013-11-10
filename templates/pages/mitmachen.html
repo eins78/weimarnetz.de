@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <title>Weimarnetz - Mitmachen</title>
-  <?php include("../inc/_head.inc.php") ?>
-</head>
+---
+title: Mitmachen
+---
 
-<body>
-
-  <?php include("../inc/navbar.inc.php") ?>
-
-  <div class="container">
-    
     <!-- CONTENT -->
     <div class="row">
       <div class="col-sm-12">
@@ -40,7 +32,7 @@
               <div class="case-head page-header">
                 <h3>Starter-Kit</h3>
                 <h5>Wohnung, Geschäft, Bürogemeinschaft, Café, Restaurant, Bar</h5>
-                <img class="img-responsive"  src="../img/participate/participate_small.png">
+                <img class="img-responsive"  src="/{{assets}}/img/participate/participate_small.png">
               </div>
               <div class="case-body">
                 <dl>
@@ -75,7 +67,7 @@
               <div class="case-head page-header">
                 <h3>Nachbarschaft</h3>
                 <h5>Balkon, hohes Gebäude, öffentlicher Platz, Park, weitläufiges Gelände</h5>
-                <img class="img-responsive"  src="../img/participate/participate_medium.png">
+                <img class="img-responsive"  src="/{{assets}}/img/participate/participate_medium.png">
               </div>
               <div class="case-body">
                 <dl>
@@ -113,7 +105,7 @@
               <div class="case-head page-header">
                 <h3>Backbone</h3>
                 <h5>Dach, Dachgeschoss, hohes Gebäude, öffentliches Gebäude, Rathaus, Kirchturm</h5>
-                <img class="img-responsive"  src="../img/participate/participate_big.png">
+                <img class="img-responsive"  src="/{{assets}}/img/participate/participate_big.png">
               </div>
               <div class="case-body">
                 <dl>
@@ -171,12 +163,3 @@
   $('[data-toggle="tooltip"]').tooltip({placement: 'top', html: true})
   $('[data-toggle="popover"]').popover({placement: 'top', html: true})
 </script>
-
-    <?php include("../inc/footer.inc.php") ?>
-
-  </div> <!-- ende container -->    
-
-  <?php include("../inc/_foot.inc.php") ?>
-
-
-</body></html>

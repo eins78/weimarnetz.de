@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{#if title}}{{title}} — {{/if}}Weimarnetz e.V.</title>
+	  {{> _head }}
+  </head>
+
+  <body {{#if body.id}}id="{{body.id}}" {{/if}}{{#if body.onload}}onload="{{{body.onload}}}" {{/if}}{{#if body.onresize}}onresize="{{{body.onresize}}}"{{/if}}>
+    
+	  {{> navbar }}
+    
+    <div class="container">
+
+      {{> body }}
+    
+      {{#if iframe.url }}
+        {{> iframe }}
+      {{/if}}
+  
+  {{> footer }}
+  
+    </div> <!-- ende inhalt /container -->
+	
+    {{> _foot }}
+	
+  </body>
+</html>
