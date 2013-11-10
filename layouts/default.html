@@ -2,26 +2,26 @@
 <html lang="en">
   <head>
     <title>{{#if title}}{{title}} — {{/if}}Weimarnetz e.V.</title>
-	  {{> _head }}
+	  {{> _head.html }}
   </head>
 
   <body {{#if body.id}}id="{{body.id}}" {{/if}}{{#if body.onload}}onload="{{{body.onload}}}" {{/if}}{{#if body.onresize}}onresize="{{{body.onresize}}}"{{/if}}>
     
-	  {{> navbar }}
+	  {{> navbar.html }}
     
     <div class="container">
 
       {{> body }}
     
       {{#if iframe.url }}
-        {{> iframe }}
+        {{> iframe.html }}
       {{/if}}
   
-  {{> footer }}
+  {{> footer.html }}
   
     </div> <!-- ende inhalt /container -->
 	
-    {{> _foot }}
+    {{> _foot.html }}
 	
   </body>
 </html>

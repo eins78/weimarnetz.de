@@ -16,7 +16,7 @@ module.exports = function(grunt) {
           dest: '_data/'
         },
         layoutdir: 'layouts',
-        partials: ['partials/**/*'],
+        partials: ['layouts/partials/*'],
         assets: '<%= cfg.destination %>/<%= cfg.assets %>',
         ext: '.php',
         marked: {sanitize: false},
