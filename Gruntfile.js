@@ -45,6 +45,7 @@ module.exports = function(grunt) {
     copy: {
       assets: {
         files: [
+          { expand: true, cwd: 'inc', src: ['**'], dest: 'inc' },
           { expand: true, cwd: '<%= cfg.assets %>', src: ['**'], dest: '<%= cfg.destination %>/<%= cfg.assets %>' },
           { expand: true, cwd: '<%= bowerDirectory %>', src: ['**'], dest: '<%= cfg.destination %>/<%= cfg.assets %>' }
           ]
