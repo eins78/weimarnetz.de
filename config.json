@@ -1,3 +1,4 @@
 {
-  "destination": "public_html"
+  "destination": "public_html",
+  "assets": "assets"
 }

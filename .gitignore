@@ -3,3 +3,5 @@
 /bower_components/
 
 /public_html/
+
+node_modules

@@ -17,6 +17,7 @@ module.exports = function(grunt) {
         },
         layoutdir: 'layouts',
         partials: ['includes/**/*'],
+        assets: '<%= cfg.destination %>/<%= cfg.assets %>',
         ext: '.php',
         marked: {sanitize: false},
         prettify: {indent: 2}
@@ -40,6 +41,15 @@ module.exports = function(grunt) {
         ]
       }
     },
+    
+    copy: {
+      assets: {
+        files: [
+          { expand: true, cwd: '<%= cfg.assets %>', src: ['**'], dest: '<%= cfg.destination %>/<%= cfg.assets %>' },
+          { expand: true, cwd: '<%= bowerDirectory %>', src: ['**'], dest: '<%= cfg.destination %>/<%= cfg.assets %>' }
+          ]
+      }
+    },
 
     // Before generating any new files,
     // remove any previously-created files.
@@ -51,6 +61,7 @@ module.exports = function(grunt) {
   // Load npm plugins to provide necessary tasks.
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task to be run.
   grunt.registerTask('default', ['clean', 'assemble', 'copy']);
