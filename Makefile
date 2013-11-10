@@ -4,8 +4,9 @@ default: build
 dev:     preview
 
 build:
-#	npm install
+	npm install
 	bower install
+	grunt
 
 preview:
-	php -S ${HOST}:8088
+	php -S localhost:8088

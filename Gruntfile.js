@@ -16,7 +16,7 @@ module.exports = function(grunt) {
           dest: '_data/'
         },
         layoutdir: 'layouts',
-        partials: ['includes/**/*'],
+        partials: ['partials/**/*'],
         assets: '<%= cfg.destination %>/<%= cfg.assets %>',
         ext: '.php',
         marked: {sanitize: false},
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         options: {layout: 'default.html'},
         files: [
           { expand: true, 
-            cwd: 'templates/pages', 
+            cwd: 'pages', 
             src: ['*'], dest: '<%= cfg.destination %>', 
             rename: function(dest, matchedSrcPath, options) {
               matchedSrcPath = path.basename(matchedSrcPath)
@@ -45,9 +45,14 @@ module.exports = function(grunt) {
     copy: {
       assets: {
         files: [
-          { expand: true, cwd: 'inc', src: ['**'], dest: 'inc' },
-          { expand: true, cwd: '<%= cfg.assets %>', src: ['**'], dest: '<%= cfg.destination %>/<%= cfg.assets %>' },
-          { expand: true, cwd: '<%= bowerDirectory %>', src: ['**'], dest: '<%= cfg.destination %>/<%= cfg.assets %>' }
+          // tmp: copy 'php' dir to root
+          { expand: true, cwd: 'php', src: ['**'], dest: '<%= cfg.destination %>' },
+          // copy static files to root
+          { expand: true, cwd: '.', src: ['robots.txt'], dest: '<%= cfg.destination %>' },
+          // copy local assets
+          { expand: true, cwd: '<%= cfg.assets %>', src: ['**'], dest: path.join('<%= cfg.destination %>','<%= cfg.assets %>') },
+          // copy bower assets
+          { expand: true, cwd: '<%= bowerDirectory %>', src: ['**'], dest: path.join('<%= cfg.destination %>','<%= cfg.assets %>') }
           ]
       }
     },
