@@ -19,6 +19,7 @@ module.exports = function(grunt) {
         partials: ['layouts/partials/*'],
         assets: '<%= cfg.destination %>/<%= cfg.assets %>',
         ext: '.php',
+        engine: 'handlebars',
         marked: {sanitize: false},
         prettify: {indent: 2}
       },

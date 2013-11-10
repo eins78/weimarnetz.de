@@ -21,7 +21,7 @@
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.4.1",
-    "assemble": "~0.4.4"
+    "assemble": "~0.4.11"
   },
   "devDependencies": {
     "assemble-contrib-contextual": "~0.1.1"
