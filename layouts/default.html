@@ -9,6 +9,10 @@
     
 	  {{> navbar.html }}
     
+    {{#if banner}}
+      {{> banner.html banner}}
+    {{/if}}
+    
     <div class="container">
 
       {{#markdown}}

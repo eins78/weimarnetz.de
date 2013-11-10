@@ -1,106 +1,90 @@
 ---
+banner: 
+  title: "Willkommen im Weimarnetz"
+  text: "Freifunk in Weimar — Das freie Bürger-WLAN!"
+  buttons: 
+    - text: "Jetzt Mitfunken"
+      href: "/mitmachen"
+      type: primary
+
+    - text: "Hilfe bekommen"
+      href: "/contact"
+      type: warning
 body:
   id: home
 ---
+<!-- main reihe blöcke - content/ad -->
+<div class="row">
 
-</div>
+<div class="col-sm-9">
 
-<!-- grosses startseitenbanner -->
-<div id="banner" class="jumbotron jumbotron-special ff-logo-bg">
-  <div class="container">
-    <h1>Willkommen im Weimarnetz</h1>
-    <p class="lead">Freifunk in Weimar &mdash; Das freie B&uuml;rger-WLAN!</p>
-    <p>
-      <a class="btn btn-primary btn-lg" href="/mitmachen">Jetzt Mitfunken &raquo;</a>
-      <a class="btn btn-warning btn-lg" href="/contact">Hilfe bekommen &raquo;</a>
-    </p>
+<!-- eine reihe content blöcke -->
+<div class="row">
+
+  <!-- ein halber block (12/6=1/2) -->
+  <div class="col-sm-6">
+    <h2 class="page-header">Was ist Weimarnetz?</h2>
+    
+    {{md "textbausteine/was-ist-weimarnetz.md"}}
     
   </div>
-</div>
+  <!-- ein halber block (12/6=1/2) -->
+  <div class="col-sm-6">
+    <!--<h2 class="page-header">Aktuelle Meldungen</h2>
+    <!- dyn: news-liste -->
+    <!-- <?php //include("../inc/currentnews.inc.php") ?> -->
+    <!--<p><a class="btn btn-xs btn-default" href="http://wireless.subsignal.org/index.php?title=Vorlage:Startseite.Aktuelles&action=edit" target="_blank">Text bearbeiten &raquo;</a></p>
+-->
+<h2 class="page-header">Worum geht es?</h2>
+<a href="/about"><img class="img-responsive" src="/{{assets}}/img/video/ffvideo.png"/></a>
+  </div>
 
-<!-- hier beginnt die eigentliche seite -->
-<div class="container">
+</div> <!-- ende reihe -->
+<!-- zweite reihe blöcke -->
+<div class="row">
+  <!-- ein halber block (12/6=1/2) -->
+  <div class="col-sm-6">
+    <h2 class="page-header">Neues aus dem Weimarnetz</h2>
+    <p>
+      <!-- dyn: discuss-liste -->
+<?php include("../inc/allnews.inc.php") ?>
 
-  <!-- main reihe blöcke - content/ad -->
-  <div class="row">
+    </p>
+  </div>
 
-    <div class="col-sm-10">
-
-      <!-- eine reihe content blöcke -->
-      <div class="row">
-
-        <!-- ein halber block (12/6=1/2) -->
-        <div class="col-sm-6">
-          <h2 class="page-header">Was ist Weimarnetz?</h2>
-          
-          {{md "textbausteine/was-ist-weimarnetz.md"}}
-          
-        </div>
-        <!-- ein halber block (12/6=1/2) -->
-        <div class="col-sm-6">
-          <!--<h2 class="page-header">Aktuelle Meldungen</h2>
-          <!- dyn: news-liste -->
-    <?php //include("../inc/currentnews.inc.php") ?>
-  	      <!--<p><a class="btn btn-xs btn-default" href="http://wireless.subsignal.org/index.php?title=Vorlage:Startseite.Aktuelles&action=edit" target="_blank">Text bearbeiten &raquo;</a></p>
-    -->
-    <h2 class="page-header">Worum geht es?</h2>
-    <a href="/about"><img class="img-responsive" src="/{{assets}}/img/video/ffvideo.png"/></a>
-        </div>
-
-
-      </div> <!-- ende reihe -->
-
-      <!-- zweite reihe blöcke -->
-      <div class="row">
-
-        <!-- ein halber block (12/6=1/2) -->
-        <div class="col-sm-6">
-          <h2 class="page-header">Neues aus dem Weimarnetz</h2>
-          <p>
-            <!-- dyn: discuss-liste -->
-      <?php include("../inc/allnews.inc.php") ?>
+  <div class="col-sm-6">
+    <h2 class="page-header">Spendenaufruf</h2>
     
-          </p>
-        </div>
-
-        <div class="col-sm-6">
-          <h2 class="page-header">Spendenaufruf</h2>
-          
-          {{md "textbausteine/spendenaufruf.md"}}
-          
-          
-        </div>
-
-      </div> <!-- ende reihe -->
-
-    </div> <!-- ende content -->
-
-    <div class="col-sm-2" style="text-align:right">
-      <h2 class="page-header"><small class="text-muted">Verein</small></h2>
-      <!-- mindfactory banner 
-      <img src="img/Banner/120x500_mindfactory_hardware.jpg" width="120" height="500" alt="Ihre Hardware stößt an ihre Grenzen? Zeit für ein Upgrade! www.mindfactory.de" usemap="#admap" />
-      <map name="admap">
-        <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-        <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-        <!-- #$-:Please do not edit lines starting with "#$" -->
-        <!-- #$VERSION:2.3 -->
-        <!-- #$AUTHOR:Unknown -->
-        <!--<area shape="rect" coords="3,413,116,438" target="_blank" href="http://www.mindfactory.de" />
-      </map>-->
+    {{md "textbausteine/spendenaufruf.md"}}
+    
+  </div>
+</div> <!-- ende reihe -->
+</div> <!-- ende content -->
+<div class="col-sm-3 text-right">
+<h2 class="page-header"><small class="text-muted">Verein</small></h2>
+<!-- mindfactory banner 
+<img src="img/Banner/120x500_mindfactory_hardware.jpg" width="120" height="500" alt="Ihre Hardware stößt an ihre Grenzen? Zeit für ein Upgrade! www.mindfactory.de" usemap="#admap" />
+<map name="admap">-->
+  <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+  <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+  <!-- #$-:Please do not edit lines starting with "#$" -->
+  <!-- #$VERSION:2.3 -->
+  <!-- #$AUTHOR:Unknown -->
+  <!--<area shape="rect" coords="3,413,116,438" target="_blank" href="http://www.mindfactory.de" />
+</map>-->
 <p>
 <address><strong>Weimarnetz e.V.</strong><br>
-        Marienstr. 18<br>
-        99423 Weimar</address>
-      <address><strong>Weimarnetz Sorgentelefon</strong><br>
-          +49 3643 544304</address>
+  Marienstr. 18<br>
+  99423 Weimar</address>
+<address><strong>Weimarnetz Sorgentelefon</strong><br>
+    +49 3643 544304</address>
 <address><strong>Email</strong><br>
-  <a href="mailto:wireless@subsignal.org?subject=Kontakt über weimarnetz.de">wireless@subsignal.org</a>
+<a href="mailto:wireless@subsignal.org?subject=Kontakt über weimarnetz.de">wireless@subsignal.org</a>
 </address>
 <strong>Spenden</strong>
 </p>
 <p>
 <iframe frameborder='0' marginheight='0' marginwidth='0' src='http://www.betterplace.org/de/projects/14895-weimarnetz-e-v-freies-wlan-in-weimar/widget' width='160' height='260' style='border: 0; padding:0; margin:0;'>Ihr Browser unterstützt keine Iframes. <a href='http://www.betterplace.org/projects'>Online Spenden</a> auf betterplace.org</iframe>
 </p>
-    </div>
-  
-  </div> <!-- ende main -->
+</div>
+</div> <!-- ende main -->

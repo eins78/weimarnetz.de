@@ -1,0 +1,16 @@
+<div id="banner" class="jumbotron jumbotron-special ff-logo-bg">
+  <div class="container">
+    
+    <h1>{{title}}</h1>
+    <p class="lead">{{text}}</p>
+    
+    {{#if buttons}}
+    <p>
+      {{#buttons}}
+        {{> button.html}}
+      {{/buttons}}
+    </p>
+    {{/if}}
+    
+  </div>
+</div>
