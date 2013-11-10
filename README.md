@@ -1,17 +1,16 @@
 # [weimarnetz.de](http://weimarnetz.de)
 
+[![Build Status](https://travis-ci.org/eins78/weimarnetz.de.png?branch=master)](https://travis-ci.org/eins78/weimarnetz.de)
 
+## Deploy
 
-## Dependencies
-
-one-time:
-
-- install `nodejs` and `npm`
-- `$ sudo npm install -g bower`
-
-checkout assets (for dev and on deploy):
-- `$ bower install`
-
+- dependencies (one-time):
+    - install `nodejs` (includes `npm`)
+    - `$ sudo npm install -g bower grunt`
+    
+- generate site
+    - `$ make`
+    - site will be in `/path/to/repo/public_html`
 
 ## PHP
 

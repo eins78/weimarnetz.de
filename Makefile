@@ -9,4 +9,4 @@ build:
 	grunt
 
 preview:
-	php -S localhost:8088
+	cd public_html && php -S localhost:8088
